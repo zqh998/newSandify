@@ -67,7 +67,12 @@ module.exports = {
     "react/no-unused-prop-types": "off",
     "react-redux/no-unused-prop-types": "warn",
     "react-redux/prefer-separate-component-file": "off",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     semi: ["warn", "never"],
   },
   settings: {

@@ -59,6 +59,17 @@ const InputOption = ({
       newValue = newValue === "" ? "" : parseFloat(newValue)
     }
 
+    if (newValue !== "") {
+      if (newValue < minimum) {
+        alert(`Sorry, the minimum input value allowed is ${minimum} !`)
+        return
+      }
+      if (newValue > maximum) {
+        alert(`Sorry, the maximum input value allowed is ${maximum} !`)
+        return
+      }
+    }
+
     setValue(newValue)
 
     let attrs = {}

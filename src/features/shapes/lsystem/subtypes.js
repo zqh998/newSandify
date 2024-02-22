@@ -165,7 +165,7 @@ export const subtypes = {
       F: "F-F-F++F+F-F",
     },
     angle: (2 * Math.PI) / 5,
-    maxIterations: 5,
+    maxIterations: 3,
   },
   // https://onlinemathtools.com/l-system-generator
   "Penrose Tile": {
